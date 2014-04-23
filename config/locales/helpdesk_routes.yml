@@ -1,6 +1,9 @@
 en:
   routes:
 
+pt-BR:
+  routes:  
+
 pl:
   routes:
     tickets: zgloszenia
