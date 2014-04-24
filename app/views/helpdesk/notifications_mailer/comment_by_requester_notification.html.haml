@@ -16,8 +16,8 @@
 %br
 %p
   = t('helpdesk.mailer.ticket_url_title')
-  %a{:href=>admin_ticket_url(:subdomain=>'suporte',:locale=>I18n.locale, :id=>@comment.ticket)}<>
-    = admin_ticket_url(:subdomain=>'suporte',:locale=>I18n.locale, :id=>@comment.ticket)
+  %a{:href=>admin_ticket_url(:locale=>I18n.locale, :id=>@comment.ticket)}<>
+    = admin_ticket_url(:locale=>I18n.locale, :id=>@comment.ticket)
 
 
 

@@ -18,7 +18,6 @@ Helpdesk::Engine.routes.draw do
     resources :tickets, :except => [ :edit, :destroy ]
     root :to => "tickets#index"
 
-    get '/' => 'tickets#show', :constraints => { :subdomain => 'suporte' }, :as => "ticketsub"
-
+    
   end
 end
