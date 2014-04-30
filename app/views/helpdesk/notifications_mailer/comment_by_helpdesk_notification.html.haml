@@ -10,4 +10,4 @@
 %p
   = t('helpdesk.mailer.ticket_url_title')
   %a{:href=>ticket_url(:locale=>I18n.locale, :id=>@comment.ticket, :anchor=>"comment#{@comment.id}") }<>
-    = ticket_url(:locale=>I18n.locale, :id=>@comment.ticket)
+    = 'suporte.neemo.com.br' + ticket_path(:locale=>I18n.locale, :id=>@comment.ticket)

@@ -18,8 +18,7 @@ Helpdesk::Engine.routes.draw do
     end
 
     resources :faqs, :only => [ :index ]
-    resources :tickets, :except => [ :edit, :destroy, :show]
-    get "/tickets/:id" => "tickets#show", constraints: {subdomain: 'suporte'}, as: 'ticket_sub'
+    resources :tickets, :except => [ :edit, :destroy]
     root :to => "tickets#index"
 
     
