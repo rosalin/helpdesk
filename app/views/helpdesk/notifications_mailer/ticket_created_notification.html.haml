@@ -17,5 +17,5 @@
 %p
   = t('helpdesk.mailer.ticket_url_title')
   %a{:href=>admin_ticket_url(:locale=>I18n.locale, :id=>@ticket)}<>
-    = 'suporte.neemo.com.br' + admin_ticket_url(:locale=>I18n.locale, :id=>@ticket)
+    = 'suporte.neemo.com.br' + admin_ticket_path(:locale=>I18n.locale, :id=>@ticket)
 
